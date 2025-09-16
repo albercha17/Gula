@@ -1,8 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #fefefe;
+body.menu {
+  background: #f1faee;
+  font-family: 'Arial', sans-serif;
   color: #333;
+  margin: 0;
 }
 
 header {
@@ -12,26 +12,40 @@ header {
   text-align: center;
 }
 
-nav a {
-  margin: 0 10px;
+header nav a {
+  margin: 0 15px;
   color: white;
   text-decoration: none;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
 }
 
 section {
   padding: 20px;
 }
 
-.item {
-  background: #f1faee;
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  cursor: pointer;
+section h2 {
+  color: #1d3557;
 }
 
-.item:hover {
-  background: #a8dadc;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  background: #f1faee;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+ul li:hover {
+  background-color: #a8dadc;
 }
 
 footer {
@@ -39,4 +53,13 @@ footer {
   padding: 15px;
   background-color: #1d3557;
   color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

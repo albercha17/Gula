@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamburguesería El Sabor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍔 Hamburguesería El Sabor</h1>
+    <nav>
+      <a href="#menu">Menú</a>
+      <a href="#pedido">Haz tu pedido</a>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Menú</h2>
+    <div class="item" onclick="agregarAlPedido('Clásica')">🍔 Clásica - $5</div>
+    <div class="item" onclick="agregarAlPedido('Doble Carne')">🍔 Doble Carne - $7</div>
+    <div class="item" onclick="agregarAlPedido('Vegana')">🌱 Vegana - $6</div>
+  </section>
+
+  <section id="pedido">
+    <h2>Tu Pedido</h2>
+    <ul id="lista-pedido"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="confirmarPedido()">Confirmar Pedido</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Hamburguesería El Sabor</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

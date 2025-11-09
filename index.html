@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Poppins + Cinzel para el rollo Peaky Blinders -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -46,99 +45,9 @@
   </header>
 
   <main>
-    <!-- NOVEDADES -->
-    <section id="novedades" class="section section--novedades">
-      <div class="container">
-        <h2 class="section__title">Novedades</h2>
-        <p class="section__subtitle">
-          Lo último que se está cocinando en Gula: cosas del mes y movidas frescas.
-        </p>
+    <div data-include="partials/novedades.html"></div>
+    <div data-include="partials/hero.html"></div>
 
-        <div class="novedades-grid">
-          <!-- Burger del mes -->
-          <article class="novedades-card">
-            <span class="novedades-card__tag">Burger del mes</span>
-            <h3 class="novedades-card__title">Smokey Gulosa</h3>
-            <p class="novedades-card__text">
-              Doble smash, queso ahumado, cebolla caramelizada y salsa BBQ de la casa.
-              Disponible solo este mes.
-            </p>
-            <a href="#carta-burgers" class="novedades-card__link">Ver burgers en la carta</a>
-          </article>
-
-          <!-- Pizza del mes -->
-          <article class="novedades-card">
-            <span class="novedades-card__tag">Pizza del mes</span>
-            <h3 class="novedades-card__title">Trufa &amp; Bacon</h3>
-            <p class="novedades-card__text">
-              Base de mozzarella, bacon crujiente y un toque de crema de trufa.
-              Para los días de ponerse fino.
-            </p>
-            <a href="#carta-pizzas" class="novedades-card__link">Ver pizzas en la carta</a>
-          </article>
-
-          <!-- Tarta del mes -->
-          <article class="novedades-card">
-            <span class="novedades-card__tag">Tarta del mes</span>
-            <h3 class="novedades-card__title">Cheesecake Gula</h3>
-            <p class="novedades-card__text">
-              Tarta de queso cremosa con base de galleta y topping cambiante según antojo.
-            </p>
-            <a href="#carta-postres" class="novedades-card__link">Ver postres en la carta</a>
-          </article>
-
-          <!-- Slider de últimas novedades -->
-          <article class="novedades-card novedades-card--slider">
-            <span class="novedades-card__tag">Últimas novedades</span>
-            <h3 class="novedades-card__title">Lo que se cuece</h3>
-
-            <div class="novedades-slider" data-slider>
-              <p class="novedades-slider__label" data-slider-label>Nuevo</p>
-              <p class="novedades-slider__text" data-slider-text>
-                Cambio de carta, nuevas burgers y más movidas. Pásate por el local y por Instagram.
-              </p>
-              <div class="novedades-slider__controls">
-                <button type="button" class="novedades-slider__btn" data-slider-prev aria-label="Ver novedad anterior">
-                  ‹
-                </button>
-                <button type="button" class="novedades-slider__btn" data-slider-next aria-label="Ver siguiente novedad">
-                  ›
-                </button>
-              </div>
-            </div>
-
-            <a href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer" class="novedades-card__link">
-              Ver más en Instagram
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__content">
-        <div class="hero__text">
-          <h1>Ven con hambre.<br>Vete guloso.</h1>
-          <p class="hero__subtitle">
-            Smash burgers, salsas caseras y un poco de vicio nocturno en Villacañas.
-          </p>
-          <div class="hero__buttons">
-            <a href="tel:34925888655" class="btn btn--primary">Llámanos: 925 888 655</a>
-            <a href="#carta" class="btn btn--ghost">Ver carta</a>
-          </div>
-          <p class="hero__note">
-            ⚠️ No hacemos reservas. Ven pronto, come mejor.
-          </p>
-        </div>
-        <div class="hero__image">
-          <!-- Sustituye esta imagen por una tuya -->
-          <img src="img/hero-burger.jpg" alt="Smash burger de Gula con queso fundido">
-        </div>
-      </div>
-    </section>
-
-    <!-- CARTA -->
     <section id="carta" class="section section--dark">
       <div class="container">
         <h2 class="section__title">Nuestra carta</h2>
@@ -146,125 +55,10 @@
           Entrantes, pizzas, burgers y postres para tomarte la noche en serio.
         </p>
 
-        <!-- ENTRANTES -->
-        <div class="menu-block" id="carta-entrantes">
-          <h3 class="menu-block__title">Entrantes</h3>
-          <div class="grid grid--3">
-            <article class="card">
-              <h3>Nachos Gula</h3>
-              <p class="card__desc">
-                Nachos crujientes con queso fundido, pico de gallo, salsa agria y toque de jalapeños.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Fingers de pollo</h3>
-              <p class="card__desc">
-                Tiras de pollo crujiente con rebozado casero y salsa Gula para mojar sin vergüenza.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Patatas Gula</h3>
-              <p class="card__desc">
-                Patatas fritas caseras con queso, bacon y salsa de la casa. No se comparten, se asaltan.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-          </div>
-        </div>
-
-        <!-- PIZZAS -->
-        <div class="menu-block" id="carta-pizzas">
-          <h3 class="menu-block__title">Pizzas</h3>
-          <div class="grid grid--3">
-            <article class="card">
-              <h3>Margarita de la casa</h3>
-              <p class="card__desc">
-                Base de tomate, mozzarella y albahaca. Sencilla, limpia y sin chorradas.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Pepperoni Gangster</h3>
-              <p class="card__desc">
-                Doble pepperoni, extra de queso y borde crujiente. De las que mandan.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Trufa &amp; Funghi</h3>
-              <p class="card__desc">
-                Champiñones, mezcla de quesos y aceite de trufa. Fina pero peligrosa.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-          </div>
-        </div>
-
-        <!-- BURGERS -->
-        <div class="menu-block" id="carta-burgers">
-          <h3 class="menu-block__title">Burgers</h3>
-          <div class="grid grid--3">
-            <article class="card">
-              <h3>La Gulosa</h3>
-              <p class="card__desc">
-                Doble smash de vaca, queso ahumado, cebolla, salsa de la casa y pan brioche tostado.
-              </p>
-              <p class="card__price">13,50 €</p>
-            </article>
-
-            <article class="card">
-              <h3>La Descarada</h3>
-              <p class="card__desc">
-                Smash burger con extra de queso, pepinillo crujiente y salsa especial. La que arrasa en las ferias.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Pío-Pío</h3>
-              <p class="card__desc">
-                Pollo extra crujiente, lechuga fresca, queso y mayo casera. Para los que se salen del vacuno.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-          </div>
-        </div>
-
-        <!-- POSTRES -->
-        <div class="menu-block" id="carta-postres">
-          <h3 class="menu-block__title">Postres</h3>
-          <div class="grid grid--3">
-            <article class="card">
-              <h3>Brownie caliente</h3>
-              <p class="card__desc">
-                Brownie de chocolate con helado de vainilla. El final feliz oficial de la casa.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Tarta de queso</h3>
-              <p class="card__desc">
-                Tarta de queso cremosa, de las de cuchara lenta. Sin prisas.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-
-            <article class="card">
-              <h3>Postre del día</h3>
-              <p class="card__desc">
-                Lo que se nos haya antojado hoy. Pregunta en barra y decide tu delito.
-              </p>
-              <p class="card__price">Consulta en local</p>
-            </article>
-          </div>
-        </div>
+        <div data-include="partials/carta/entrantes.html"></div>
+        <div data-include="partials/carta/pizzas.html"></div>
+        <div data-include="partials/carta/burgers.html"></div>
+        <div data-include="partials/carta/postres.html"></div>
 
         <p class="section__small">
           * Los precios y productos pueden variar. La carta oficial es la del local.
@@ -272,88 +66,10 @@
       </div>
     </section>
 
-    <!-- BURGER DEL MES -->
-    <section id="burger-mes" class="section">
-      <div class="container container--split">
-        <div>
-          <h2 class="section__title">Burger del mes</h2>
-          <p class="section__subtitle">
-            Cada mes nos venimos arriba con una burger limitada.
-          </p>
-          <p>
-            Pásate por nuestro Instagram para ver la burger del mes, combos especiales y locuras temporales.
-          </p>
-          <a class="btn btn--primary" href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">
-            Ver la burger del mes en Instagram
-          </a>
-        </div>
-        <div class="burger-mes__image">
-          <!-- Cambia por una foto real de la burger del mes -->
-          <img src="img/burger-mes.jpg" alt="Hamburguesa del mes en Gula">
-        </div>
-      </div>
-    </section>
-
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="section section--dark">
-      <div class="container container--narrow">
-        <h2 class="section__title">¿Qué es Gula?</h2>
-        <p>
-          Gula es ese sitio al que vienes con antojo serio, de los de “hoy ceno bien o reviento”.
-          Trabajamos con smash burgers, productos cuidados y un rollo de street food
-          sin postureo: plancha caliente, música alta y gente con hambre.
-        </p>
-        <p>
-          Estamos en Villacañas (Toledo) y abrimos por las noches de miércoles a domingo.
-          No hacemos reservas: el primero que llega, come antes. Simple.
-        </p>
-      </div>
-    </section>
-
-    <!-- INFO -->
-    <section id="info" class="section">
-      <div class="container grid grid--2">
-        <div>
-          <h2 class="section__title">Horario</h2>
-          <ul class="list">
-            <li>Miércoles a domingo: 20:00 – cierre</li>
-            <li>Lunes y martes: cerrados</li>
-          </ul>
-          <p class="section__small">
-            * El horario puede cambiar en festivos o eventos. Revisa nuestras stories en Instagram.
-          </p>
-
-          <h2 class="section__title section__title--margin">Contacto</h2>
-          <p>Teléfono: <a href="tel:34925888655">925 888 655</a></p>
-          <p>Instagram: <a href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">@gula.rest</a></p>
-        </div>
-
-        <div>
-          <h2 class="section__title">Dónde estamos</h2>
-          <p>
-            Calle Tirez, 33<br>
-            45860 Villacañas (Toledo)
-          </p>
-          <div class="map-placeholder">
-            <!-- Aquí podrías incrustar un mapa de Google Maps -->
-            <p>Mapa próximamente</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INSTAGRAM -->
-    <section class="section section--dark">
-      <div class="container">
-        <h2 class="section__title">Síguenos en Instagram</h2>
-        <p class="section__subtitle">
-          Fotos frescas, burgers nuevas y avisos de horarios especiales.
-        </p>
-        <a class="btn btn--ghost" href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">
-          Ver perfil @gula.rest
-        </a>
-      </div>
-    </section>
+    <div data-include="partials/burger-del-mes.html"></div>
+    <div data-include="partials/nosotros.html"></div>
+    <div data-include="partials/info.html"></div>
+    <div data-include="partials/instagram.html"></div>
   </main>
 
   <footer class="footer">
@@ -363,6 +79,6 @@
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -234,6 +234,24 @@ body {
   margin-top: 1rem;
 }
 
+/* Bloques de carta */
+
+.menu-block {
+  margin-top: 2.5rem;
+}
+
+.menu-block__title {
+  margin-bottom: 0.9rem;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+}
+
 /* Grid */
 
 .grid {

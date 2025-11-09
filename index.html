@@ -1,16 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenido - Hamburguesería El Sabor</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gula · Smash burgers en Villacañas</title>
+  <meta name="description" content="Smash burgers, buen rollo y cero reservas. Ven a Gula en Villacañas y ponte guloso.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="inicio">
-  <div class="container">
-    <h1>🍔 Bienvenido a El Sabor</h1>
-    <!-- Ahora el botón redirige a "menu.html" -->
-    <a href="menu.html" class="boton">Entrar al Menú</a>
-  </div>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <div class="logo">
+        <span class="logo__main">Gula</span>
+        <span class="logo__tagline">Smash · Burgers · Villacañas</span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Abrir menú" id="navToggle">
+        ☰
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#carta">Carta</a>
+        <a href="#burger-mes">Burger del mes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#info">Horario y contacto</a>
+        <a href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <h1>Ven con hambre.<br>Vete guloso.</h1>
+          <p class="hero__subtitle">
+            Smash burgers, salsas caseras y un poco de vicio nocturno en Villacañas.
+          </p>
+          <div class="hero__buttons">
+            <a href="tel:34925888655" class="btn btn--primary">Llámanos: 925 888 655</a>
+            <a href="#carta" class="btn btn--ghost">Ver carta</a>
+          </div>
+          <p class="hero__note">
+            ⚠️ No hacemos reservas. Ven pronto, come mejor.
+          </p>
+        </div>
+        <div class="hero__image">
+          <!-- Sustituye esta imagen por una tuya -->
+          <img src="img/hero-burger.jpg" alt="Smash burger de Gula con queso fundido">
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section id="carta" class="section section--dark">
+      <div class="container">
+        <h2 class="section__title">Nuestra carta</h2>
+        <p class="section__subtitle">
+          Algunas de las criaturas que salen de la plancha:
+        </p>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>La Gulosa</h3>
+            <p class="card__desc">
+              Doble smash de vaca, queso ahumado, cebolla, salsa de la casa y pan brioche tostado.
+            </p>
+            <p class="card__price">13,50 €</p>
+          </article>
+
+          <article class="card">
+            <h3>La Descarada</h3>
+            <p class="card__desc">
+              Smash burger con extra de queso, pepinillo crujiente y salsa especial. La que arrasa en las ferias.
+            </p>
+            <p class="card__price">Consulta en local</p>
+          </article>
+
+          <article class="card">
+            <h3>Pío-Pío</h3>
+            <p class="card__desc">
+              Pollo extra crujiente, lechuga fresca, queso y mayo casera. Para los que se salen del vacuno.
+            </p>
+            <p class="card__price">Consulta en local</p>
+          </article>
+        </div>
+
+        <div class="grid grid--2 section__extra">
+          <div>
+            <h3>Extras</h3>
+            <ul class="list">
+              <li>Patatas fritas caseras</li>
+              <li>Patatas con queso y bacon</li>
+              <li>Salsas caseras</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Postres</h3>
+            <p>
+              Tartas y cosas dulces que cambian según el antojo. Pregunta en barra.
+            </p>
+          </div>
+        </div>
+
+        <p class="section__small">
+          * Los precios y productos pueden variar. La carta oficial es la del local.
+        </p>
+      </div>
+    </section>
+
+    <!-- BURGER DEL MES -->
+    <section id="burger-mes" class="section">
+      <div class="container container--split">
+        <div>
+          <h2 class="section__title">Burger del mes</h2>
+          <p class="section__subtitle">
+            Cada mes nos venimos arriba con una burger limitada.
+          </p>
+          <p>
+            Pásate por nuestro Instagram para ver la burger del mes, combos especiales y locuras temporales.
+          </p>
+          <a class="btn btn--primary" href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">
+            Ver la burger del mes en Instagram
+          </a>
+        </div>
+        <div class="burger-mes__image">
+          <!-- Cambia por una foto real de la burger del mes -->
+          <img src="img/burger-mes.jpg" alt="Hamburguesa del mes en Gula">
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="section section--dark">
+      <div class="container container--narrow">
+        <h2 class="section__title">¿Qué es Gula?</h2>
+        <p>
+          Gula es ese sitio al que vienes con antojo serio, de los de “hoy ceno bien o reviento”.
+          Trabajamos con smash burgers, productos cuidados y un rollo de street food
+          sin postureo: plancha caliente, música alta y gente con hambre.
+        </p>
+        <p>
+          Estamos en Villacañas (Toledo) y abrimos por las noches de miércoles a domingo.
+          No hacemos reservas: el primero que llega, come antes. Simple.
+        </p>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section id="info" class="section">
+      <div class="container grid grid--2">
+        <div>
+          <h2 class="section__title">Horario</h2>
+          <ul class="list">
+            <li>Miércoles a domingo: 20:00 – cierre</li>
+            <li>Lunes y martes: cerrados</li>
+          </ul>
+          <p class="section__small">
+            * El horario puede cambiar en festivos o eventos. Revisa nuestras stories en Instagram.
+          </p>
+
+          <h2 class="section__title section__title--margin">Contacto</h2>
+          <p>Teléfono: <a href="tel:34925888655">925 888 655</a></p>
+          <p>Instagram: <a href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">@gula.rest</a></p>
+        </div>
+
+        <div>
+          <h2 class="section__title">Dónde estamos</h2>
+          <p>
+            Calle Tirez, 33<br>
+            45860 Villacañas (Toledo)
+          </p>
+          <div class="map-placeholder">
+            <!-- Aquí podrías incrustar un mapa de Google Maps -->
+            <p>Mapa próximamente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="section__title">Síguenos en Instagram</h2>
+        <p class="section__subtitle">
+          Fotos frescas, burgers nuevas y avisos de horarios especiales.
+        </p>
+        <a class="btn btn--ghost" href="https://www.instagram.com/gula.rest" target="_blank" rel="noopener noreferrer">
+          Ver perfil @gula.rest
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> Gula · Villacañas</p>
+      <p class="footer__note">Web fan-made basada en el perfil de Instagram.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

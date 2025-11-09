@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Incluimos también Cinzel para el rollo Peaky Blinders -->
+  <!-- Poppins + Cinzel para el rollo Peaky Blinders -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -62,49 +62,126 @@
       <div class="container">
         <h2 class="section__title">Nuestra carta</h2>
         <p class="section__subtitle">
-          Algunas de las criaturas que salen de la plancha:
+          Entrantes, pizzas, burgers y postres para tomarte la noche en serio.
         </p>
 
-        <div class="grid grid--3">
-          <article class="card">
-            <h3>La Gulosa</h3>
-            <p class="card__desc">
-              Doble smash de vaca, queso ahumado, cebolla, salsa de la casa y pan brioche tostado.
-            </p>
-            <p class="card__price">13,50 €</p>
-          </article>
+        <!-- ENTRANTES -->
+        <div class="menu-block">
+          <h3 class="menu-block__title">Entrantes</h3>
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>Nachos Gula</h3>
+              <p class="card__desc">
+                Nachos crujientes con queso fundido, pico de gallo, salsa agria y toque de jalapeños.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
 
-          <article class="card">
-            <h3>La Descarada</h3>
-            <p class="card__desc">
-              Smash burger con extra de queso, pepinillo crujiente y salsa especial. La que arrasa en las ferias.
-            </p>
-            <p class="card__price">Consulta en local</p>
-          </article>
+            <article class="card">
+              <h3>Fingers de pollo</h3>
+              <p class="card__desc">
+                Tiras de pollo crujiente con rebozado casero y salsa Gula para mojar sin vergüenza.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
 
-          <article class="card">
-            <h3>Pío-Pío</h3>
-            <p class="card__desc">
-              Pollo extra crujiente, lechuga fresca, queso y mayo casera. Para los que se salen del vacuno.
-            </p>
-            <p class="card__price">Consulta en local</p>
-          </article>
+            <article class="card">
+              <h3>Patatas Gula</h3>
+              <p class="card__desc">
+                Patatas fritas caseras con queso, bacon y salsa de la casa. No se comparten, se asaltan.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+          </div>
         </div>
 
-        <div class="grid grid--2 section__extra">
-          <div>
-            <h3>Extras</h3>
-            <ul class="list">
-              <li>Patatas fritas caseras</li>
-              <li>Patatas con queso y bacon</li>
-              <li>Salsas caseras</li>
-            </ul>
+        <!-- PIZZAS -->
+        <div class="menu-block">
+          <h3 class="menu-block__title">Pizzas</h3>
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>Margarita de la casa</h3>
+              <p class="card__desc">
+                Base de tomate, mozzarella y albahaca. Sencilla, limpia y sin chorradas.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+
+            <article class="card">
+              <h3>Pepperoni Gangster</h3>
+              <p class="card__desc">
+                Doble pepperoni, extra de queso y borde crujiente. De las que mandan.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+
+            <article class="card">
+              <h3>Trufa &amp; Funghi</h3>
+              <p class="card__desc">
+                Champiñones, mezcla de quesos y aceite de trufa. Fina pero peligrosa.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
           </div>
-          <div>
-            <h3>Postres</h3>
-            <p>
-              Tartas y cosas dulces que cambian según el antojo. Pregunta en barra.
-            </p>
+        </div>
+
+        <!-- BURGERS -->
+        <div class="menu-block">
+          <h3 class="menu-block__title">Burgers</h3>
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>La Gulosa</h3>
+              <p class="card__desc">
+                Doble smash de vaca, queso ahumado, cebolla, salsa de la casa y pan brioche tostado.
+              </p>
+              <p class="card__price">13,50 €</p>
+            </article>
+
+            <article class="card">
+              <h3>La Descarada</h3>
+              <p class="card__desc">
+                Smash burger con extra de queso, pepinillo crujiente y salsa especial. La que arrasa en las ferias.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+
+            <article class="card">
+              <h3>Pío-Pío</h3>
+              <p class="card__desc">
+                Pollo extra crujiente, lechuga fresca, queso y mayo casera. Para los que se salen del vacuno.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- POSTRES -->
+        <div class="menu-block">
+          <h3 class="menu-block__title">Postres</h3>
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>Brownie caliente</h3>
+              <p class="card__desc">
+                Brownie de chocolate con helado de vainilla. El final feliz oficial de la casa.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+
+            <article class="card">
+              <h3>Tarta de queso</h3>
+              <p class="card__desc">
+                Tarta de queso cremosa, de las de cuchara lenta. Sin prisas.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
+
+            <article class="card">
+              <h3>Postre del día</h3>
+              <p class="card__desc">
+                Lo que se nos haya antojado hoy. Pregunta en barra y decide tu delito.
+              </p>
+              <p class="card__price">Consulta en local</p>
+            </article>
           </div>
         </div>
 
